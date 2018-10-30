@@ -20,5 +20,4 @@ from .settings import *
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', admin.site.urls),
 ] + static(MEDIA_URL, document_root=MEDIA_ROOT)
