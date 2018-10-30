@@ -15,6 +15,6 @@ class ToDo(models.Model):
     checked = models.BooleanField()
     deadline = models.DateTimeField()
     share = models.ManyToManyField(to=User,related_name='user')
-    comments = models.ManyToManyField(to=Comment,related_name='comment')
+    comments = models.ManyToManyField(to=Comment,related_name='comment',blank=True)
     attachment = models.FileField()
 
